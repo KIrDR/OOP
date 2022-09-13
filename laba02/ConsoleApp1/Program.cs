@@ -1,4 +1,6 @@
-﻿//--------------TYPES-----------------
+﻿using System.Text;
+
+//--------------TYPES-----------------
 
 //1a
 Console.WriteLine(" 1a  \n");
@@ -153,9 +155,6 @@ if (f1.GetTypeCode() == f0.GetTypeCode())
 {
     Console.WriteLine(f0 + "    var присвоилось тип double");
 }
-#pragma warning disable S125 // Sections of code should not be commented out
-// f0 = "I'm STRING"; 
-#pragma warning restore S125 // Sections of code should not be commented out
 
 
 // string 
@@ -188,7 +187,7 @@ else
 
 string h0 = "i like icecream with chocolate ";
 string h1 = "and big sandwich ";
-string h2 = "my best friend is Dimka ";
+string h2 = "my best friend is Dimka";
 
 Console.WriteLine($"Сцепление строк: {String.Concat(h0, h1)}");
 string h3 = String.Copy(h1); // This API should not be used to create mutable strings. 
@@ -200,7 +199,227 @@ string h3 = String.Copy(h1); // This API should not be used to create mutable st
  * а просто возвращает ссылку на существующую интернированную строку.*/
 Console.WriteLine($"Копирование строки: {h3}");
 Console.WriteLine($"Выделение подстроки: {h2.Substring(9)}");
+
 Console.WriteLine($"Разделение строки на слова: "); 
+string[] h4 = h2.Split(' ');
+foreach (var h5 in h4)
+{
+    Console.WriteLine($"<{h5}>");
+}
 
-Console.WriteLine("Hello, World!" + f0.Equals(f1));
+Console.WriteLine("\nвставки подстроки в заданную позицию{0}", h2.Insert(7, "-best"));
 
+Console.WriteLine("\nудаление заданной подстроки: {0}", h0.Remove(7,14));
+
+// 2c
+string i0 = "";
+string i1 = null;
+Console.WriteLine($"IsNullOrEmpty: {string.IsNullOrEmpty(i0)}");
+Console.WriteLine($"IsNullOrEmpty: {string.IsNullOrEmpty(i1)}");
+Console.WriteLine($"1 строка=2 строка: {i0 == i1}");
+Console.WriteLine($"Сцепление: {String.Concat(i0, i1)}");
+
+// 2d  
+
+StringBuilder j0 = new StringBuilder("bbcd", 5);
+j0.Append(new char[] { 'e', 'f', 'g' });
+j0.Insert(0, "a");
+j0.Remove(2, 1);
+Console.WriteLine($"StringBuilder: {j0}");
+
+
+// Array
+
+int[,] k0 = { { 1, 2,3}, { 4 , 5, 6 }, { 7, 8, 9} };
+
+int rows = k0.GetUpperBound(0) + 1;
+int columns = k0.Length / rows;
+for (int k1 = 0; k1 < rows; k1++)
+{
+    for (int k2 = 0; k2 < columns; k2++)
+    {
+        Console.Write($"{k0[k1, k2]} \t");
+    }
+    Console.WriteLine();
+}
+
+// 3b 
+
+string[] l0 = { " Mum" , " and" , " dad" , " are", " family."};
+
+Console.WriteLine($"Длинна строчного массива : {l0.Length}");
+
+foreach (string l1 in l0)
+{
+    Console.WriteLine(l1);
+}
+
+Console.WriteLine("Введите индекс элемента, который хотите изменить (0-4)");
+int l2 = Convert.ToInt32(Console.ReadLine());
+
+string l3 = Console.ReadLine();
+l0[l2] = l3;
+
+Console.WriteLine(" ");
+foreach (string l1 in l0)
+{
+    Console.WriteLine(l1);
+}
+
+// 3 c 
+
+int[][] m0 = new int[3][];
+
+Console.WriteLine("Сейчас будем заполнять ступенчатый массив:");
+
+
+int[] m = {0,0,0,0,0,0,0,0,0};
+for (int i = 0; i < 9; i++)
+{
+    m[i] = i;
+}
+
+m0[0] = new int[] { m[0], m[1]};
+m0[1] = new int[] { m[2], m[3], m[4] };
+m0[2] = new int[] { m[5], m[6], m[7], m[8] };
+foreach (int[] row in m0)
+{
+    foreach (int number in row)
+    {
+        Console.Write($"{number} \t");
+    }
+    Console.WriteLine();
+}
+
+// 3d
+
+var toothArray = new string[3][];
+
+for (var i = 1; i < 4; i++)
+{
+    toothArray[i - 1] = new string[i];
+}
+
+for (var i = 0; i < 3; i++)
+{
+    for (var j = 0; j < toothArray[i].Length; j++)
+    {
+        Console.WriteLine("toothArray[{0}][{1}]: ", i, j);
+        toothArray[i][j] = Console.ReadLine();
+    }
+}
+
+Console.WriteLine();
+for (var i = 0; i < 3; i++)
+{
+    for (var j = 0; j < toothArray[i].Length; j++)
+    {
+        Console.Write("{0} ", toothArray[i][j]);
+    }
+
+    Console.WriteLine();
+}
+
+// 4 Tuple
+var tuple = ( 1, "mum", '3', "dad", (ulong)5 );
+
+Console.WriteLine("Какой элемент корте<жа хотите вывести ?");
+int choise = Convert.ToInt32(Console.ReadLine());
+switch (choise)
+{
+    case 1:
+        Console.WriteLine(tuple.Item1);
+        break;
+    case 2:
+        Console.WriteLine(tuple.Item2);
+        break;
+    case 3:
+        Console.WriteLine(tuple.Item3);
+        break;
+    case 4:
+        Console.WriteLine(tuple.Item4);
+        break;
+    case 5:
+        Console.WriteLine(tuple.Item5);
+        break;
+    default:
+        Console.WriteLine("Неверный ввод!");
+        break;
+}
+
+Console.WriteLine("\n Выведем весь кортеж: " +
+    "{0} , {1} , {2} , {3} , {4}" ,tuple.Item1, tuple.Item2, tuple.Item3, tuple.Item4, tuple.Item5);
+
+int int1;
+string string1, string2;
+char char1;
+ulong ulong1;
+(_, string1, _, _, ulong1) = tuple;
+(int1 , _, char1, string2, _) = tuple;
+
+var tuple1 = (1, 2, 3, "131", '1');
+var tuple2 = (1, 2, 3, "131", '1');
+
+Console.WriteLine(tuple1 == tuple2);
+
+
+
+// 5 Локальная функция 
+
+(int, int, int, char) LocalFunction(int[] numbers, string str)
+{
+    var minNum = int.MaxValue;
+    var maxNum = int.MinValue;
+    var sumNums = 0;
+    foreach (var num in numbers)
+    {
+        if (num < minNum)
+        {
+            minNum = num;
+        }   
+
+        if (num > maxNum)
+        {
+            maxNum = num;
+        }
+
+        sumNums += num;
+    }
+
+    return (maxNum, minNum, sumNums, str[0]);
+
+}
+var nums = new[] 
+    { 34, 124, 12, 4, 24};
+var str = "ohoh";
+Console.WriteLine(LocalFunction(nums, str));
+
+
+// 6 Работа с checked/unchecked:
+
+void LocalFunction1()
+{
+    unchecked
+    {
+        var maxValue = int.MaxValue;
+        maxValue++;
+        Console.WriteLine(maxValue);
+    }
+}
+
+void LocalFunction2()
+{
+    checked
+    {
+        var maxValue = int.MaxValue;
+        maxValue++;
+        Console.WriteLine(maxValue);
+    }
+
+}
+
+LocalFunction1();
+LocalFunction2();
+
+
+Console.WriteLine("Hello, World!");
