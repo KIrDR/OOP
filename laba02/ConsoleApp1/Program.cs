@@ -146,7 +146,7 @@ e5 = null;
 
 Console.WriteLine(e0 + "\n" + e1 + "\n" + e2 + "\n" + e3 + "\n" + e4 + "\n" + e5);
 // в консоль значение null не выводится как символ. Пусто просто ) 
-
+    
 // 1f 
 
 var f0 = 12.5;
@@ -412,7 +412,7 @@ void LocalFunction2()
     checked
     {
         var maxValue = int.MaxValue;
-        maxValue++;
+            maxValue++;
         Console.WriteLine(maxValue);
     }
 
