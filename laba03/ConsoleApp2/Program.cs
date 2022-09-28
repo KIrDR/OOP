@@ -66,7 +66,9 @@ namespace Programm
                                                 new Airlains("Sochi", 12, "boeng377", new DateTime(2023, 05, 28, 13, 00, 00), "Thursday"),
                                                 new Airlains("Praga", 13, "boeng37", new DateTime(2024, 03, 18, 14, 00, 00), "Friday")};
 
-            Airlains.PrintList(ref reys);
+            int x ;
+            Airlains.PrintList(out x);
+            Console.WriteLine("слово"+ x);
             Airlains.GoalDestination(reys);
             Airlains.SelectionOfDay(reys, out massage);
         }

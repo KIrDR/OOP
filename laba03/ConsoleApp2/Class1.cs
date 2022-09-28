@@ -90,12 +90,15 @@ namespace Programm
 
         }
 
-        public static void PrintList(ref Airlains[] x)
+        public static int PrintList(int x)
         {
-            foreach (Airlains xz in x)
+            x = 15;
+
+            return x;
+            /*foreach (Airlains xz in x)
             {
                 Console.WriteLine("{0}  {1}  {2}  {3}  {4}", xz.Destinaton, xz.NofFlight, xz.TypeFly, xz.dateTime, xz.Day);
-            }
+            }*/
 
         }
     }
