@@ -7,6 +7,11 @@
     {
         static void Main()
         {
+            var str = "абаба.йюйцбуйцъдвфвйаюие";
+            str.DeleteAllVowel();
+
+
+
             Console.WriteLine("Массив какого размера вы хотите задать?");
             int Size = Convert.ToInt32(Console.ReadLine());
 
@@ -123,7 +128,7 @@
 
             Console.WriteLine(Word.developer.FullName);
 
-            Word.DeleteAllVowel();
+           // Word.DeleteAllVowel();
 
 
 

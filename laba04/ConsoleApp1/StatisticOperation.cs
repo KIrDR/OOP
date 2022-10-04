@@ -9,7 +9,6 @@ namespace Laba03
 {
     static class StatisticOperation
     {
-
         public static void MmaxMinusMmin(this ArrayN x)
         {
             int k = x.oneArray.Max() - x.oneArray.Min();
@@ -46,29 +45,51 @@ namespace Laba03
             Console.WriteLine(x.oneArray.Length);
         }
 
-        public static void DeleteAllVowel(this ArrayN userInput)
+        public static void DeleteAllVowel(this string str)
         {
-            
+            var stringBuilder = new StringBuilder();
+            var array = new char[] { 'у', 'е', 'а', 'о', 'э', 'я', 'и', 'ю', 'ё', 'ы' };
 
-           /*  string letter = "бвгджзйклмнпрстфхцчшщ";
-
-            for (int i = 0; i < userInput.developer.FullName.Length; i++)
+            foreach(var e in str)
             {
-                for (int k = 0; k < letter.Length; ++k)
+                var flag = true;
+                foreach(var symbol in array)
                 {
-                    if (userInput.developer.FullName[i] == letter[k])
+                    if(e == symbol)
                     {
-                        userInput.developer.FullName = userInput.developer.FullName.Remove(i,1);
+                        flag = false;
+                        break;
                     }
                 }
+
+                if (flag)
+                {
+                    stringBuilder.Append(e);
+                }
+
             }
-            Console.WriteLine(userInput.developer.FullName);
+
+            str = stringBuilder.ToString();
+            Console.WriteLine(str);
+            /*  string letter = "бвгджзйклмнпрстфхцчшщ";
+
+             for (int i = 0; i < userInput.developer.FullName.Length; i++)
+             {
+                 for (int k = 0; k < letter.Length; ++k)
+                 {
+                     if (userInput.developer.FullName[i] == letter[k])
+                     {
+                         userInput.developer.FullName = userInput.developer.FullName.Remove(i,1);
+                     }
+                 }
+             }
+             Console.WriteLine(userInput.developer.FullName);
 
 
-            Regex.Replace(userInput, "(?i)[бвгджзйклмнпрстфхцчшщ]", "");
-            Regex r = new Regex(@"\b[аеёиоуыэюя]\S+\b", RegexOptions.IgnoreCase);
-            userInput.developer.FullName = r.Replace(userInput.developer.FullName, "");
-            Console.WriteLine(userInput.developer.FullName);*/ 
+             Regex.Replace(userInput, "(?i)[бвгджзйклмнпрстфхцчшщ]", "");
+             Regex r = new Regex(@"\b[аеёиоуыэюя]\S+\b", RegexOptions.IgnoreCase);
+             userInput.developer.FullName = r.Replace(userInput.developer.FullName, "");
+             Console.WriteLine(userInput.developer.FullName);*/
         }
     }
 }
