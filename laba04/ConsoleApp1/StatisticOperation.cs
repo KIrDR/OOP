@@ -9,31 +9,66 @@ namespace Laba03
 {
     static class StatisticOperation
     {
-        public static int Mmax(ArrayN x)
+
+        public static void MmaxMinusMmin(this ArrayN x)
+        {
+            int k = x.oneArray.Max() - x.oneArray.Min();
+            Console.WriteLine(k);
+        }
+
+        public static void Mmax(this ArrayN x)
         {
             int maxValue =  x.oneArray.Max();
-            return maxValue;
+            Console.WriteLine(maxValue);
         }
 
-        public static int Mmin(ArrayN x)
+        public static void Mmin(this ArrayN x)
         {
             int minValue = x.oneArray.Min();
-            return minValue;
+            Console.WriteLine(minValue);
         }
 
-        public static int Ssum(ArrayN x)
+        public static void Ssum(this ArrayN x)
         {
-            return x.oneArray.Sum();
+
+            int n = 0;            
+
+            for (int i = 0; i < x.oneArray.Length; i++)
+            {
+                n += x.oneArray[i];
+            }
+
+            Console.WriteLine(n);
         }
 
-        public static int KolVo(ArrayN x)
+        public static void KolVo(this ArrayN x)
         {
-            return (x.oneArray.Length);
+            Console.WriteLine(x.oneArray.Length);
         }
 
-        public static string DeleteAllVowel(string userInput)
+        public static void DeleteAllVowel(this ArrayN userInput)
         {
-            Regax.Replace(userInput, "(?i)[бвгджзйклмнпрстфхцчшщ]", "");
+            
+
+           /*  string letter = "бвгджзйклмнпрстфхцчшщ";
+
+            for (int i = 0; i < userInput.developer.FullName.Length; i++)
+            {
+                for (int k = 0; k < letter.Length; ++k)
+                {
+                    if (userInput.developer.FullName[i] == letter[k])
+                    {
+                        userInput.developer.FullName = userInput.developer.FullName.Remove(i,1);
+                    }
+                }
+            }
+            Console.WriteLine(userInput.developer.FullName);
+
+
+            Regex.Replace(userInput, "(?i)[бвгджзйклмнпрстфхцчшщ]", "");
+            Regex r = new Regex(@"\b[аеёиоуыэюя]\S+\b", RegexOptions.IgnoreCase);
+            userInput.developer.FullName = r.Replace(userInput.developer.FullName, "");
+            Console.WriteLine(userInput.developer.FullName);*/ 
         }
     }
 }
