@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="console_APP_4.Button" Collapsed="true">
+    <Position X="6.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IButton.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="console_APP_4.Checktbox" Collapsed="true">
+    <Position X="8" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAEAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IChecktbox.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="console_APP_4.ElemOfManage" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAEAAAAAAAAEAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IElemOfManage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="console_APP_4.Radiobutton" Collapsed="true">
+    <Position X="10" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAEAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IRadiobutton.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="console_APP_4.Printer" Collapsed="true">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Printer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="console_APP_4.Rectangle" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAQEQAAAAAAAEAAEAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Rectangle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.117" Collapsed="true" />
+  </Class>
+  <Class Name="laba04.Program" Collapsed="true">
+    <Position X="15.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="console_APP_4.AbstaractFigure" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAEAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstaractFigure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="console_APP_4.Circle" Collapsed="true">
+    <Position X="11.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACBACAAAACAEAAAAAAAAEAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Circle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="console_APP_4.IManagement" Collapsed="true">
+    <Position X="10.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IManagement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
