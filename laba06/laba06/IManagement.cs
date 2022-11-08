@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 
 namespace laba05
 {
-    public enum EnumOfColor : long
+    public interface IManagement
     {
-        Red = 1,
-        Green = 2,
-        Blue,
-        white = 16581375,
-        Black = 0
-
+        public void Show();
+        public void Input();
     }
 }

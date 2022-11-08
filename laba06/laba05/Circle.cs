@@ -6,14 +6,34 @@ using System.Threading.Tasks;
 
 namespace laba05
 {
-    public partial class Circle : AbstaractFigure, IManagement
+    public class Circle : AbstaractFigure, IManagement
     {
+        public float radius;
+        public Color color = new Color();
+        public Button? button;
+        public Radiobutton? radoibutton;
+
 
 
         public Circle(float pointX, float pointY, float radius, ElemOfManage button, int colorType)
         {
+
+            if (pointX < 0)
+            {
+                throw new InvalidPositionException("invalid position", (int)pointX);
+            }
+
+            if (pointY < 0)
+            {
+                throw new InvalidPositionException("invalid position", (int)pointY);
+            }
             this.pointX = pointX;
             this.pointY = pointY;
+            if (radius < 0 || radius > 100)
+            {
+                throw new InvalidTypeException("invalid type", (int)radius);
+            }
+
             this.radius = radius;
             Button niceButton1 = button as Button;
             this.button = niceButton1;
@@ -29,6 +49,10 @@ namespace laba05
                         Console.WriteLine("Прямоугольник не может быть Checktbox");
                     }
                 }
+            }
+            if (colorType < -1 || colorType > 4)
+            {
+                throw new InvalidTypeException("invalid type", colorType);
             }
             if (colorType == 1)
             {
@@ -74,6 +98,11 @@ namespace laba05
             color.green = green;
             color.blue = blue;
 
+            if (radius < 0 || radius > 100)
+            {
+                throw new InvalidTypeException("invalid type", (int)radius);
+            }
+
             this.pointX = pointX;
             this.pointY = pointY;
             this.radius = radius;
@@ -96,6 +125,11 @@ namespace laba05
 
         public Circle(float pointX, float pointY, float radius, ElemOfManage button)
         {
+
+            if (radius < 0 || radius > 100)
+            {
+                throw new InvalidTypeException("invalid type", (int)radius);
+            }
 
             this.pointX = pointX;
             this.pointY = pointY;

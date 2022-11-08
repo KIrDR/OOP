@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace laba05
 {
-    public enum EnumOfColor : long
+    public enum EnumOfColor
     {
         Red = 1,
         Green = 2,

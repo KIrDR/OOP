@@ -1,5 +1,6 @@
 ﻿
 using laba05;
+using System.Diagnostics;
 
 namespace laba05
 {
@@ -90,6 +91,25 @@ namespace laba05
 
             controlPanel.Leng(userInterface);
 
+
+            Debugger.Break();
+
+
+            Circle redCircle = new Circle((float)4.3, (float)4.3, (float)4.3, NiceButton, 1);
+            Circle greenCircle = new Circle((float)4.3, (float)4.3, (float)4.3, NiceButton, 2);
+            Circle blueCircle = new Circle((float)4.3, (float)4.3, (float)4.3, NiceButton, 3);
+            Circle blackCircle = new Circle((float)4.3, (float)4.3, (float)4.3, NiceButton, 0);
+            Circle whiteCircle = new Circle((float)4.3, (float)4.3, (float)4.3, NiceButton, 16581375);
+
+            redCircle.Show();
+            greenCircle.Show();
+            blueCircle.Show();
+            blackCircle.Show();
+            whiteCircle.Show();
+
+            Circle circle = new Circle((float)4.3, (float)4.3, (float)4.3, NiceButton,1, 24 ,2 ,4);
+
+            circle.Show();
 
             Console.ReadLine();
         }

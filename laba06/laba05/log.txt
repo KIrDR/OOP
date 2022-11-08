@@ -1,0 +1,83 @@
+31.10.2022 19:49:11, Information: invalid type
+31.10.2022 19:57:43, Information: invalid type
+31.10.2022 19:58:38, Information: invalid type
+31.10.2022 19:59:35, Information: invalid type
+31.10.2022 20:00:02, Information: invalid type
+31.10.2022 20:00:02, Information: invalid type
+31.10.2022 20:10:21, Information: invalid type
+31.10.2022 20:10:21, Information: invalid type
+31.10.2022 20:10:31, Information: invalid type
+31.10.2022 20:12:09, Information: invalid type
+31.10.2022 20:12:41, Information: invalid type
+31.10.2022 20:16:15, Information: invalid type
+31.10.2022 20:16:50, Information: invalid type
+31.10.2022 20:20:25, Information: invalid type
+31.10.2022 20:21:51, Information: invalid type
+31.10.2022 20:27:24, Information: invalid type
+31.10.2022 20:28:26, Information: invalid type
+31.10.2022 20:29:41, Information: invalid type
+31.10.2022 20:30:47, Information: invalid type
+31.10.2022 20:31:46, Information: invalid type
+31.10.2022 20:33:44, Information: invalid type
+31.10.2022 20:35:14, Information: invalid type
+31.10.2022 20:35:44, Information: invalid type
+31.10.2022 20:35:44, Information: invalid type
+01.11.2022 12:42:52, Information: invalid type
+01.11.2022 12:42:52, Information: invalid type
+01.11.2022 13:04:29, Information: invalid type
+01.11.2022 13:04:29, Information: invalid type
+01.11.2022 13:04:29, Information: invalid height
+01.11.2022 13:04:29, Information: invalid position
+01.11.2022 13:06:42, Information: invalid type
+01.11.2022 13:06:42, Information: invalid type
+01.11.2022 13:06:42, Information: invalid height
+01.11.2022 13:06:42, Information: invalid position
+01.11.2022 13:24:53, Information: invalid type
+01.11.2022 13:24:53, Information: invalid type
+01.11.2022 13:24:53, Information: invalid height
+01.11.2022 13:24:53, Information: invalid position
+01.11.2022 13:29:06, Information: invalid type
+01.11.2022 13:29:06, Information: invalid type
+01.11.2022 13:29:06, Information: invalid height
+01.11.2022 13:29:06, Information: invalid position
+01.11.2022 13:31:09, Information: invalid type
+01.11.2022 13:31:09, Information: invalid type
+01.11.2022 13:31:09, Information: invalid height
+01.11.2022 13:31:09, Information: invalid position
+01.11.2022 13:31:54, Information: invalid type
+01.11.2022 13:32:55, Information: invalid type
+01.11.2022 13:58:00, Information: invalid type
+01.11.2022 13:58:00, Information: Attempted to divide by zero.
+01.11.2022 13:58:00, Information: invalid type
+01.11.2022 13:58:00, Information: invalid height
+01.11.2022 13:58:00, Information: invalid position
+01.11.2022 14:01:57, Information: invalid type
+01.11.2022 14:01:57, Information: Attempted to divide by zero.
+01.11.2022 14:01:57, Information: invalid type
+01.11.2022 14:01:57, Information: invalid height
+01.11.2022 14:01:57, Information: invalid position
+01.11.2022 14:07:17, Information: invalid type
+01.11.2022 14:07:17, Information: Attempted to divide by zero.
+01.11.2022 14:07:17, Information: invalid type
+01.11.2022 14:07:17, Information: invalid height
+01.11.2022 14:07:17, Information: invalid position
+01.11.2022 14:08:48, Information: invalid type
+01.11.2022 14:08:48, Information: Attempted to divide by zero.
+01.11.2022 14:08:48, Information: invalid type
+01.11.2022 14:08:48, Information: invalid height
+01.11.2022 14:08:48, Information: invalid position
+01.11.2022 16:20:21, Information: invalid type
+01.11.2022 16:20:21, Information: Attempted to divide by zero.
+01.11.2022 16:20:21, Information: invalid type
+01.11.2022 16:20:21, Information: invalid height
+01.11.2022 16:20:21, Information: invalid position
+01.11.2022 16:20:58, Information: invalid type
+01.11.2022 16:20:58, Information: Attempted to divide by zero.
+01.11.2022 16:20:58, Information: invalid type
+01.11.2022 16:20:58, Information: invalid height
+01.11.2022 16:20:58, Information: invalid position
+01.11.2022 16:22:39, Information: invalid type
+01.11.2022 16:22:39, Information: Attempted to divide by zero.
+01.11.2022 16:22:39, Information: invalid type
+01.11.2022 16:22:39, Information: invalid height
+01.11.2022 16:22:39, Information: invalid position

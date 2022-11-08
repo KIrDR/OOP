@@ -20,12 +20,6 @@ namespace laba05
             this.green = green;
             this.blue = blue;
         }
-        public Color()
-        {
-            this.alpha = 1;
-            this.red = 1;
-            this.green = 1;
-            this.blue = 1;
-        }
+
     }
 }
