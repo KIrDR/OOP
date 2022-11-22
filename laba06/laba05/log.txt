@@ -81,3 +81,8 @@
 01.11.2022 16:22:39, Information: invalid type
 01.11.2022 16:22:39, Information: invalid height
 01.11.2022 16:22:39, Information: invalid position
+08.11.2022 16:21:43, Information: invalid type
+08.11.2022 16:21:44, Information: Attempted to divide by zero.
+08.11.2022 16:21:44, Information: invalid type
+08.11.2022 16:21:44, Information: invalid height
+08.11.2022 16:21:44, Information: invalid position

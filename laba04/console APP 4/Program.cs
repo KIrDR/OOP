@@ -47,6 +47,7 @@ namespace laba04
 
             Console.WriteLine("Метод из интерфейса: "); 
             ((IManagement)circleRadioButton).Show();
+            IManagement psdf = circleButtton; 
             Console.WriteLine("\n\n\n\nРабота с прямоугольником");
 
             Rectangle rectangle1 = new Rectangle((float)4.3, (float)4.3, (float)2, (float)7, NiceButton);
