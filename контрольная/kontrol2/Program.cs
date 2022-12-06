@@ -16,6 +16,17 @@ namespace kontrol2
             int size = set2.Count(n => n.name == "goovach" );
 
             Console.WriteLine(size);
+
+            User Pasha = new User();
+            Button big = new Button("Привет, я большой ");
+            Button small = new Button("Привет, я маленький ");
+
+            Pasha.click += new SomeDelegate(big.Click);
+            Pasha.click += new SomeDelegate(small.Click);
+
+            Pasha.Click();
+
+
         }
 
     }
